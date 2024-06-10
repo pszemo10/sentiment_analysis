@@ -15,7 +15,6 @@ MODEL_FILE = "model_weights.h5py"
 def main():
     dataloader = Dataloader(os.path.join(MODEL_DIR, TOKENIZER_FILE), False)
     df = dataloader.load(TRAINING_FILE)
-    print(df['Ratings'].value_counts())
 
     X = df['Reviews']
     y = df['Ratings']
