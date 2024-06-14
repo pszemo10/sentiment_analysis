@@ -36,8 +36,8 @@ Trenowanie uruchamiamy poleceniem
 ```
 python3 Training.py
 ```
-Domyślnie model trenowany jest na danych z pliku ```train.ft.txt```, który zawiera pierwsze milion linii z pliku ```full_train.ft.txt``` zawierającego 3 600 000 danych. By wytrenować model na pełnym zestawie danych należy zamienić nazwę pliku ```train.ft.txt``` na ```full_train.ft.txt``` w linii 10. pliku Training.py.
-Ze względu na ograniczenia sprzętowe nie trenowałem modelu na pełnym zestawie danych, na pomniejszonym zajmowało to około 5 godzin. By przyspieszyć ten proces można ograniczyć trenowanie do jednej epoki zmieniając parametr ```epochs``` w linii 33. na 1 lub zmniejszyć ilość wczytywanych danych. Nawet dla 10000 można uzyskać accuracy na poziomie 85%. Liczbę linii pliku używanych do treningu lub ewaluacji można zmienić odkomentowując linię 19. w pliku Dataloader.py.
+Domyślnie model trenowany jest na danych z pliku ```train.ft.txt``` zawierającym 3 600 000 danych. Ze względu na ograniczenia sprzętowe trenowałem model na pierwszych 1 000 000 danych co zajmowało około 5 godzin.
+By przyspieszyć ten proces można ograniczyć trenowanie do jednej epoki zmieniając parametr ```epochs``` w linii 33. na 1 lub zmniejszyć ilość wczytywanych danych. Nawet dla 10000 można uzyskać accuracy na poziomie 85%. Liczbę linii pliku używanych do treningu lub ewaluacji można zmienić odkomentowując linię 19. w pliku Dataloader.py.
 
 ## Ewaluacja
 
